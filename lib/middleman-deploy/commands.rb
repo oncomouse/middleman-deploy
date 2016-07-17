@@ -50,7 +50,7 @@ module Middleman
         instrument = options['instrument']
 
         @app = ::Middleman::Application.new do
-          config[:mode] = :build
+          config[:mode] = :config
           config[:environment] = env
           ::Middleman::Logger.singleton(verbose, instrument)
         end
